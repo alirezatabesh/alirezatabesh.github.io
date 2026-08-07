@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Articles | Alireza Tabesh</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Markdown renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>Alireza Tabesh</h2>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#articles">Articles</a>
+        </div>
+    </nav>
+</header>
+
+<main class="articles-page">
+
+    <section class="articles-header">
+        <a class="back-link" href="index.html#articles">← Back to Articles</a>
+
+        <h1>My Articles</h1>
+
+        <p>
+            Technical articles written and published directly on this website.
+        </p>
+    </section>
+
+    <section class="local-articles">
+        <div id="articles-list" class="cards">
+            <div class="card loading">Loading articles...</div>
+        </div>
+    </section>
+
+    <section id="article-viewer" class="article-viewer" hidden>
+        <a class="back-link" href="articles.html">← All Articles</a>
+        <article id="article-content"></article>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 Alireza Tabesh
+</footer>
+
+<script src="articles.js"></script>
+
+</body>
+</html>
