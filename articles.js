@@ -48,6 +48,7 @@ async function loadArticles() {
         }
 
     } catch (error) {
+        console.log(error);
         articleList.innerHTML = `
             <div class="card">
                 <h3>Could not load articles</h3>
@@ -64,7 +65,7 @@ async function openArticle(file, articles) {
         throw new Error("Article not found.");
     }
 
-    const response = await fetch(`articles/${article.file}`);
+    const response = await fetch(`${article.file}`);
 
     if (!response.ok) {
         throw new Error(`Unable to load ${article.file}`);
