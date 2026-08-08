@@ -275,6 +275,6 @@ footer {
     direction: rtl;
 }
 
-code {
+pre, code {
     direction: ltr;
 }
