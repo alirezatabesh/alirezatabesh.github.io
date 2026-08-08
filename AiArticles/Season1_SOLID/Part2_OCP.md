@@ -1,5 +1,7 @@
 # جلسه: Open/Closed Principle — OCP
 
+**توجه: این مقاله به کمک نسخه رایگان ChatGPT نوشته شده است.**
+
 ### جایگاه در مسیر SOLID
 
 ```text
