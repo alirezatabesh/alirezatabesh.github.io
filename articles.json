@@ -16,5 +16,11 @@
         "description": "SOLID: Liskov Substitution Principle (LSP).",
         "date": "2026-08-08",
         "file": "/AiArticles/Season1_SOLID/Part3_LSP.md"
+    },
+	{
+        "title": "Interface Segregation Principle (ISP)",
+        "description": "SOLID: Interface Segregation Principle (ISP).",
+        "date": "2026-08-10",
+        "file": "/AiArticles/Season1_SOLID/Part4_ISP.md"
     }
 ]
