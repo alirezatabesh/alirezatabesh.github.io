@@ -44,7 +44,16 @@ async function loadArticles() {
         const articleFile = params.get("article");
 
         if (articleFile) {
-            await openArticle(articleFile, articles);
+            try {
+                await openArticle(articleFile, articles);
+            } catch (error) {
+                const articleError = document.getElementById("article-error");
+                articleError.innerHTML = `
+                    <h2>Could not open article</h2>
+                    <p>${escapeHtml(error.message)} Please choose an article below.</p>
+                `;
+                articleError.hidden = false;
+            }
         }
 
     } catch (error) {
@@ -76,6 +85,7 @@ async function openArticle(file, articles) {
     articleContent.innerHTML = marked.parse(markdown);
 
     articleList.parentElement.hidden = true;
+    document.querySelector(".articles-header").hidden = true;
     articleViewer.hidden = false;
 
     document.title = `${article.title} | Alireza Tabesh`;
